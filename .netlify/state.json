@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Saint Cloud",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "MN",
+				"name": "Minnesota"
+			},
+			"timezone": "America/Chicago",
+			"latitude": 45.5428,
+			"longitude": -94.1871,
+			"postalCode": "56301"
+		},
+		"timestamp": 1758557395758
+	}
+}
