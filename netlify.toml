@@ -1,0 +1,21 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Local dev convenience (optional)
+[dev]
+  framework = "vite"
+  command = "npm run dev"
+  targetPort = 5173
+  port = 8888
+
+# Redirect API calls to functions if you ever call /api/*
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
